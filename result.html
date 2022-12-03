@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- saved from url=(0014)about:internet -->
+    <meta charset="UTF-8">
+
+    <title>Results</title>
+    <style>
+        #btnPrint {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            margin-top: 20px;
+            /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px outset grey;
+        }
+
+        td {
+            height: 50px;
+            vertical-align: center;
+        }
+
+        #result-answers {
+            font-family: "Times New Roman";
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        #result-answers td,
+        #result-answers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            word-break: break-word;
+        }
+
+        #result-answers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #result-answers tr:hover {
+            background-color: #ddd;
+        }
+
+        #result-answers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+
+        body {
+            font-family: arial;
+            text-align: center;
+            font-size: 13pt;
+        }
+
+        td,
+        th {
+            border: 1px inset grey;
+        }
+
+        table.summary {
+            width: 600px;
+        }
+
+        table.questions {
+            width: 100%;
+        }
+
+        td {
+            width: 12.5%;
+        }
+
+        th,
+        h3 {
+            font-size: 12pt;
+        }
+
+        h1,
+        h2 {
+            font-size: 14pt;
+        }
+
+        .correct {
+            color: #008800;
+        }
+
+        .incorrect {
+            color: #880000;
+        }
+
+        .neutral {
+            color: #000088;
+        }
+
+        .question {
+            text-align: left;
+            width: 46.25%;
+        }
+
+        .number {
+            font-size: 10pt;
+            width: 3.75%;
+        }
+
+        .datetime {
+            font-size: 10pt;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+    <script type="text/javascript" src="result.js" charset="UTF-8"></script>
+    <script>
+        function printDiv(divName) {
+            // var printContents = document.getElementById(divName).innerHTML;
+            // w = window.open();
+            // w.document.write(printContents);
+            window.print();
+            //w.close();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="result">
+        <div id="header">
+            <div>
+                <h1 id="titleReport" style="text-align:center;">REPORT</h1>
+            </div>
+        </div>
+        <p>&nbsp;</p>
+        <!-- <div><button onclick="GetState();"  style="height:100px; width: 100px;">AAAAAA</button></div> -->
+        <div id="contentResult">
+        </div>
+    </div>
+    <button id="btnPrint" onclick="printDiv('result')">Print this page</button>
+</body>
+
+</html>

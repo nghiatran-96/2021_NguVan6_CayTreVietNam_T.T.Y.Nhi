@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "IntegralsUp";
+    src: url("../fonts/STIXIntegralsUpD-Bold.otf");
+}
+
+@font-face {
+    font-family: "SizeOneSym";
+    src: url("../fonts/STIXSizeOneSym-Regular.otf");
+}@font-face{font-family:"avnSegoe UI"; src: url("../fonts/segoeui.ttf");}
+@font-face{font-family:"avnCalibri"; src: url("../fonts/calibri.ttf");}
